@@ -71,6 +71,9 @@ iptables -A FORWARD -p icmp -s 192.168.20.0/24 -d 192.168.10.0/24 --icmp-type ec
 # Allow VLAN20 → internet
 iptables -A FORWARD -s 192.168.20.0/24 -o enp0s9 -j ACCEPT
 
+# Allow VLAN10 → internet
+iptables -A FORWARD -s 192.168.10.0/24 -o enp0s9 -j ACCEPT
+
 # NAT — masquerade outbound traffic on WAN interface
 iptables -t nat -A POSTROUTING -o enp0s9 -j MASQUERADE
 
