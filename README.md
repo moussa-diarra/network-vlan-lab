@@ -121,11 +121,14 @@ Without this, the firewall receives packets destined for other subnets and silen
 
 ## Screenshots
 
-| Step | Screenshot |
-|---|---|
-| Firewall interfaces — `ip a` | `screenshots/fw-ip-a.png` |
-| VLAN10 — ping 8.8.8.8 success, VLAN20 blocked | `screenshots/vlan10-ping-test.png` |
-| VLAN20 — SSH to VLAN10 success,ping VLAN10 blocked, 8.8.8.8 success | `screenshots/vlan20-ping-and-ssh-test.png` |
+### Firewall interfaces
+![ip a](screenshots/fw-ip-a.png)
+
+### VLAN 10 and VLAN 20
+![VLAN10 — ping 8.8.8.8 success, VLAN20 blocked](screenshots/vlan10-ping-test.png)
+
+### VLAN 10 and VLAN 20
+![VLAN20 — SSH to VLAN10 success,ping VLAN10 blocked, 8.8.8.8 success](screenshots/vlan20-ping-and-ssh-test.png)
 
 ---
 
